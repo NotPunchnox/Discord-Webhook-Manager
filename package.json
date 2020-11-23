@@ -1,0 +1,35 @@
+{
+  "name": "webhook-manager",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-builder": "electron-builder",
+    "electron": "^11.0.1",
+    "electron-compile": "^6.4.4",
+    "electron-packager": "^15.1.0",
+    "electron-prebuilt": "^1.4.13"
+  },
+  "devDependencies": {
+    "electron-builder": "electron-builder",
+    "electron": "^11.0.1",
+    "electron-packager": "^15.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "punchnox",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotPunchnox/Discord-Webhook-Manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NotPunchnox/Discord-Webhook-Manager/issues"
+  },
+  "homepage": "https://github.com/NotPunchnox/Discord-Webhook-Manager#readme",
+  "description": "Si vous voulez la version en exe allez sur discord.gg/punchnox ou vous pouvez aussi le compiler avec la commande  `electron-packager . --all`"
+}

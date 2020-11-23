@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="./src/js/webhook.js"></script>
+  <script type="text/javascript" src="./src/js/windows.js"></script>
+  <script type="text/javascript" src="./src/js/interface.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Discord webhook manager | create by punchnox</title>
+  <script type="text/javascript" script-name="allerta" src="http://use.edgefonts.net/allerta.js"></script>
+</head>
+
+<body>
+
+  <div id="toolbar">
+    <div class="btn2" id="close"></div>
+    <div class="btn2" id="max"></div>
+    <div class="btn2" id="min"></div>
+    <div id="title">Discord webhook manager | create by punchnox</span>
+    </div>
+  </div>
+
+  <a class="btn4" onclick="menu();">Menu</a>
+  <a class="btn4" onclick="wbspam();">spammer message</a>
+  <a class="btn4" onclick="webhookspamm();">spammer embeds</a>
+  <a class="btn4" onclick="wbdel();">webhook delete</a>
+  <a class="btn4" onclick="wbsender();">webhook sender</a>
+
+
+  <div class="container">
+
+    <h2>DISCORD WEBHOOK MANAGER</h2>
+    <h2 id="menu" class="visible">DISCORD.GG/PUNCHNOX</h2>
+
+    <form id="wbembed" class="invisible">
+
+      <div class="group">
+        <input id="webhook" type="text" required>
+        <span class="bar"></span>
+        <label>Webhook url</label>
+      </div>
+
+      <div class="group">
+        <input id="message" type="text" required>
+        <span class="bar"></span>
+        <label>Description</label>
+      </div>
+
+      <div class="group">
+        <input id="color" type="text" required>
+        <span class="bar"></span>
+        <label>Couleur</label>
+      </div>
+
+      <div class="group">
+        <input id="titre" type="text" required>
+        <span class="bar"></span>
+        <label>Titre</label>
+      </div>
+
+
+
+      <a onclick="webhookspammembd();" class="btn effect04" data-sm-link-text="cliquer" target="_blank"><span>Start
+          spamming</span></a>
+      <a onclick="appquit();" class="btn3 btn effect04" data-sm-link-text="cliquer" target="_blank"><span>Stop
+          spamming</span></a>
+    </form>
+
+    <div id="wbspam" class="invisible">
+
+      <div class="group">
+        <input id="webhook1" type="text" required>
+        <span class="bar"></span>
+        <label>Webhook url</label>
+      </div>
+
+      <div class="group">
+        <input id="message1" type="text" required>
+        <span class="bar"></span>
+        <label>Message</label>
+      </div>
+
+      <a onclick="webhookspammmsg();" class="btn effect04" data-sm-link-text="cliquer" target="_blank"><span>Start
+          spamming</span></a>
+      <a onclick="appquit();" class="btn3 btn effect04" data-sm-link-text="cliquer" target="_blank"><span>Stop
+          spamming</span></a>
+
+
+    </div>
+
+    <div id="deletewb" class="invisible">
+
+      <div class="group">
+        <input id="webhook2" type="text" required>
+        <span class="bar"></span>
+        <label>Webhook url</label>
+      </div>
+      <a onclick="webhookdelete();" class="btn effect04" data-sm-link-text="cliquer" target="_blank"><span>Delete webhook</span></a>
+    </div>
+
+      <div id="senderwb" class="invisible">
+
+      <div class="group">
+        <input id="webhook3" type="text" required>
+        <span class="bar"></span>
+        <label>Webhook url</label>
+      </div>
+
+      <div class="group">
+        <input id="message3" type="text" required>
+        <span class="bar"></span>
+        <label>Message</label>
+      </div>
+
+      <div class="group">
+        <input id="avatar3" type="text" required>
+        <span class="bar"></span>
+        <label>Avatar URL</label>
+      </div>
+
+      <div class="group">
+        <input id="username3" type="text" required>
+        <span class="bar"></span>
+        <label>Username</label>
+      </div>
+      <a onclick="wbsender2();" class="btn effect04" data-sm-link-text="cliquer" target="_blank"><span>Send</span></a>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
