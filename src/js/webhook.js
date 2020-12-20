@@ -1,6 +1,7 @@
+const snekfetch = require("snekfetch");
+
 function webhookspammmsg() {
 
-  const snekfetch = require("snekfetch");
   commandIntervals = [];
 
   if (!document.getElementById("webhook1").value) return alert("Vous n'avez pas mis le webhook");
@@ -19,8 +20,6 @@ function webhookspammmsg() {
 }
 
 function webhookspammembd() {
-
-  const snekfetch = require("snekfetch");
   commandIntervals = [];
 
   if (!document.getElementById("webhook").value) return alert("Vous n'avez pas mis le webhook");
@@ -46,8 +45,6 @@ function webhookspammembd() {
 
 function webhookdelete() {
 
-  const snekfetch = require("snekfetch");
-
   if (!document.getElementById("webhook2").value) return alert("Vous n'avez pas mis le webhook");
   var webhook2 = document.getElementById("webhook2").value;
   snekfetch.delete(webhook2)
@@ -59,7 +56,6 @@ function webhookdelete() {
 }
 
 function wbsender2() {
-  const snekfetch = require("snekfetch");
   if (!document.getElementById("webhook3").value) return alert("Vous n'avez pas mis le webhook");
   var webhook3 = document.getElementById("webhook3").value;
   if (!document.getElementById("message3").value) return alert("Vous n'avez pas mis de message à send");
